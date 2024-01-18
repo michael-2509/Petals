@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flower Image Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="../static/images/flower.png" al="" flowers />
+      <h2>Petals</h2>
+    </nav>
+    <div class="flower-bgn">
+      <p>Upload a pic and let's reveal the flower type magic! 🌸</p>
+    </div>
+    </div>
+
+    {% if prediction %}
+    <div class="prediction-box">
+      <p class="prediction-result">Behold the Beauty: It's a {{ prediction }}!</p>
+    </div>
+    
+    {% endif %} 
+    <div class="container">
+     
+      <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" id="file_image" name="image" accept="image/*" />
+        <input type="submit" value="Predict" class="btn" />
+      </form>
+      
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  background-color: #244d49;
+  padding: 25px 10px;
+}
+
+.nav h2 {
+  color: white;
+  margin: 0;
+}
+
+.flower-bgn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../static/images/blue.jpeg);
+  background-size: cover;
+  height: 250px;
+}
+
+.flower-bgn p {
+  background: #9ad1ea;
+  color: #008f81;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 5px;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.webcam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #244d49;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.prediction-box {
+  margin: 30px 10px;
+  padding: 15px;
+  border: 2px solid #008f81;
+  border-radius: 8px;
+}
+
+.prediction-box:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 960px) {
+  /* .container {
+    width: 100%;
+  } */
+}
